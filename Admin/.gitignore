@@ -1,0 +1,47 @@
+# OS
+.DS_Store
+
+# IntelliJ
+*.iml
+**/.idea/workspace.xml
+**/.idea/kotlinc.xml
+**/.idea/libraries
+**/.idea/compiler.xml
+**/.idea/sonarlint/*
+**/.idea/modules.xml
+**/.idea/vcs.xml
+**/.idea/misc.xml
+**/.idea/typescript-compiler.xml
+**/.idea/jsLibraryMappings.xml
+**/.idea/gradle.xml
+**/.idea/artifacts/**
+.editorconfig
+
+# Gradle
+.gradle
+
+# Web
+**/bower_components
+**/node_modules
+**/jspm_packages
+**/.tmp
+**/npm-debug.*
+link-checker-results.txt
+**/app/**/*.js
+**/*.js.map
+**/e2e/**/*.js
+**/e2e/**/*.js.map
+_test-output
+_temp
+frontend/dist/**
+frontend/dll/**
+
+# Android
+*.apk
+/local.properties
+**/build
+/captures
+output.json
+.externalNativeBuild
+
+# Misc

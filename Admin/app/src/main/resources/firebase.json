@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hollywoodprinciple-fdebd",
+  "private_key_id": "00ab7aed8847d03e1f1c94228c152b6ab00fb665",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC4ZUPbZVozoYUm\nHuEBnxP5GdLXKFLf2cdzeSN+L/zV/4Jb9I0fN+wQJJRzFL9wAWu/8nas6pQ0N34m\nheSylvy8xuBdtQdiCnF8mTui+cCG2bcUvKtNebCo/j4CGki6/c/2PbdGyxPLbIwP\n2/9AIwo7FL6g5JuYdMkyFYf5NgEP27IS6w4/t8wb5Jtx95rbjpKwtKpEf2SNqTRn\neqVGS0n2hHVRKrWNkZw1HIn+XSQnKq2dnnO4EzYfbJJ8uNwvTUPvXCbPba9giiwU\nr5OOSvQjxMqccdJQtK6vXyLKh3TQPGw4qneiNbvCGXEcxstt8xAhtXABdieUJ9U9\nEnpWSgxjAgMBAAECggEAZIqioz/yHPDW/uAbY5zvcQWJltNfzLqcK/RDTAyyWaTF\n2YnQYNNHHc40O0N21oWP0MtNth75zDbty+d5uX7mM7BkqfOJIQX8tyl+APEY7u5L\nCz2MUeQmVR67hL38Jik6eVNRWYJlOqfm/sa/uKLiczBueJ/tzwTupyZiS5oMni4J\nTXahOw06P3TvzQOWY1/p8xWiZ2kjyOJpFQKVm8LTHNolKv0iupIGxEqC8CUvukkS\njs1C0Mdzs+LDUGI9PbR1AIQwA8BxP0yQxhax4+yV3CmWygUdua8LbENLqMCSp6cI\nBshJA0Jnen2aTHiGFzvaXb6MIPSXWeybHoJBmxxU4QKBgQDZm1xTDScSB5HcdcjP\nq+ioJOVirUKxvnWhmrGg1uq0tz6ZfgI+zcribgfpt6uN/rmKq5T/J1kESgWCpXq0\nbTxZZ/8t9rX1PXpSc9wNTJJlfSh/3YfaySnCUhFFz2n/gdp1Gq6vk53dz0Rs68U+\nboqkqRtSnymzeyorvp86bVVOiwKBgQDY7dnKh+ZxSawsR7XlxazmGObAstnBIyX5\n8AyONiXU4Wo1e14f5PPHKGbyTL1AIsp6/hLmeS8xxEb1VwYe7q+YPE3aJFLg+3Xd\nl6j8B3lM3X21gdV+b+GoWp6hlzQhJ9tP7Ij40ZpMJ2E5tNGP3XNiN9FzZil9ou1+\nFg9pIu2MiQKBgQCZjOSAAkbwlQDbBQ4XZKH+jFKE5+epDtFooIT5Ds59iNSWcPFa\nqdKhJq1UwXM/9l+st1ijF3vb5/OtdeF5EZ/FIvpQz8cj7yayqei8Ra0ECmYanBKy\nUsKxyUFA9pRAZLvnaFWdtVdvXkNVbKU5Yb1ZZa7PBVriuGVQiulGzEGm8wKBgF8R\nNb4Ver8xKzwonSW6UMByL0ZJ2zZSIgV71vTH9CJsOzB/BUvy+YbRRPRw/wtJc/Uc\nvcm1WCJ2Qyan4a3Sqq+L1g6AlrW0Xf4jxdHVsKon8zyFTrvfakRumlB0xEq3fdxz\n678nlHhFVc2FWcWzpipoDemF3y8JJQ15u3026mYJAoGBALVky299fyEQff1ZRfn8\nl+O5YSffMiwoknkRjXcJsRijfelLyYnTvJBL3VdrTyRs1AHSRvDEIBMhhjdU9N4B\nI6g+pQ0+KcR8q8JCyyojpsGy9deSsvNQY4b3RFBkuXvfHPXzLdSVyvckkf1wz0ZC\nTkuWCg7plLTzKywU1oKAl75f\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-hpmjp@hollywoodprinciple-fdebd.iam.gserviceaccount.com",
+  "client_id": "108780852311382464715",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-hpmjp%40hollywoodprinciple-fdebd.iam.gserviceaccount.com"
+}

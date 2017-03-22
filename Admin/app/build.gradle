@@ -1,0 +1,57 @@
+jar {
+    baseName = "${projectName}-admin"
+    version = "${backendVersion}"
+}
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter:${springVersion}"
+    compile "org.springframework.boot:spring-boot-starter-web:${springVersion}"
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+
+    compile "io.reactivex:rxjava:${rxJavaVersion}"
+    compile "io.reactivex:rxkotlin:${rxKotlinVersion}"
+
+    compile "com.google.firebase:firebase-admin:${firebaseAdminVersion}"
+
+    compile "com.github.endran:RxFirebaseAdminKt:${rxFirebaseAdminVersion}"
+
+    compile "com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}"
+    compile "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
+    compile "com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:${jacksonVersion}"
+    compile "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:${jacksonVersion}"
+    compile "com.fasterxml.jackson.module:jackson-module-kotlin:${jacksonVersion}"
+}
+
+apply plugin: 'docker'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath('se.transmode.gradle:gradle-docker:1.2')
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    }
+}
+
+docker {
+    maintainer = 'David Hardy <davidhardy85@gmail.com>'
+}
+
+group = 'hollywood'
+
+task buildDocker(type: Docker, dependsOn: build) {
+    push = false
+    applicationName = 'backend'
+    dockerfile = file('src/main/docker/Dockerfile')
+    doFirst {
+        copy {
+            from jar
+            into stageDir
+
+            rename { String fileName ->
+                "renamedApp.jar"
+            }
+        }
+    }
+}

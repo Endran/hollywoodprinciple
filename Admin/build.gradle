@@ -1,0 +1,75 @@
+group 'nl.endran'
+version '0.1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlinVersion = '1.0.5-2'
+    ext.springBootVersion = '1.4.2.RELEASE'
+
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.github.ben-manes:gradle-versions-plugin:0.13.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+allprojects {
+
+    apply plugin: 'java'
+    apply plugin: 'com.github.ben-manes.versions'
+    apply plugin: 'idea'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'application'
+    apply plugin: 'kotlin'
+
+    ext.projectName = 'Hollywood'
+    ext.backendVersion = '0.1.0-SNAPSHOT'
+
+    ext.assertJVersion = '3.6.1'
+    ext.firebaseAdminVersion = '4.0.3'
+    ext.jacksonVersion = '2.8.5'
+    ext.jMockitVersion = '1.29'
+    ext.jUnitVersion = '4.12'
+    ext.kotlinVersion = '1.0.5-2'
+    ext.springVersion = '1.4.2.RELEASE'
+    ext.springOauthVersion = '2.0.12.RELEASE'
+    ext.swaggerVersion = '2.4.0'
+    ext.rxJavaVersion = '1.2.3'
+    ext.rxKotlinVersion = '0.60.0'
+    ext.rxFirebaseAdminVersion = '1.1'
+
+    repositories {
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+
+    idea {
+        module {
+            inheritOutputDirs = false
+            outputDir = file("${buildDir}/classes/main/")
+        }
+    }
+
+    group = ext.projectName
+    version = ext.backendVersion
+
+    mainClassName = 'nl.endran.hollywood.HollywoodApplication'
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/java'
+        main.kotlin.srcDirs += 'src/main/kotlin'
+    }
+
+    dependencies {
+        testCompile "org.springframework.boot:spring-boot-starter-test:${springVersion}"
+        testCompile "org.assertj:assertj-core:${assertJVersion}"
+        testCompile "org.jmockit:jmockit:${jMockitVersion}"
+        testCompile "junit:junit:${jUnitVersion}"
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.2.1'
+}
