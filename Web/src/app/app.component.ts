@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {AngularFire, FirebaseListObservable} from 'angularfire2';
+import {FireEvent} from "./model/fire-event";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+
+  events: FireEvent[];
+
+  constructor(af: AngularFire) {
+    af.database.list('/events').subscribe(events => {
+      this.events = events
+    });
+  }
 }

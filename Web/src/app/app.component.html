@@ -1,3 +1,9 @@
 <h1>
   {{title}}
 </h1>
+
+<ul>
+  <li class="text" *ngFor="let event of events">
+    {{event.appId}} -+- {{event.checked}} -+- {{event.clientType}} -+- {{event.name}} -+- {{event.radioId}} -+- {{event.timeStamp  | date: 'yyyy-MM-dd HH:mm:ss'}}
+  </li>
+</ul>
