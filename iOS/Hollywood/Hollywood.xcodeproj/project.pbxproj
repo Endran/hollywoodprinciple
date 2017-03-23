@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3433511C0B17123C483321D0 /* Pods_Hollywood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CD6BD52B9F2BD27F4700CD /* Pods_Hollywood.framework */; };
+		43492C9D1E840B1C00534C29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43492C9C1E840B1C00534C29 /* AppDelegate.swift */; };
+		43492C9F1E840B1C00534C29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43492C9E1E840B1C00534C29 /* ViewController.swift */; };
+		43492CA21E840B1C00534C29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43492CA01E840B1C00534C29 /* Main.storyboard */; };
+		43492CA41E840B1C00534C29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43492CA31E840B1C00534C29 /* Assets.xcassets */; };
+		43492CA71E840B1C00534C29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43492CA51E840B1C00534C29 /* LaunchScreen.storyboard */; };
+		43492CB21E840B1C00534C29 /* HollywoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43492CB11E840B1C00534C29 /* HollywoodTests.swift */; };
+		43492CBD1E840B1C00534C29 /* HollywoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43492CBC1E840B1C00534C29 /* HollywoodUITests.swift */; };
+		43534DD81E840BED0046D270 /* FIRDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43534DD71E840BED0046D270 /* FIRDataObject.swift */; };
+		43534DDA1E840C010046D270 /* FireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43534DD91E840C010046D270 /* FireView.swift */; };
+		43534DDC1E840E210046D270 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43534DDB1E840E210046D270 /* GoogleService-Info.plist */; };
+		64860A9DD404BB9D734E08D6 /* Pods_HollywoodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A901B3418B3810A605DF0F /* Pods_HollywoodTests.framework */; };
+		B8183DBC8EFECB751E1E36CD /* Pods_HollywoodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5245BEDF60C7BB8B26437D /* Pods_HollywoodUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43492CAE1E840B1C00534C29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43492C911E840B1C00534C29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43492C981E840B1C00534C29;
+			remoteInfo = Hollywood;
+		};
+		43492CB91E840B1C00534C29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43492C911E840B1C00534C29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43492C981E840B1C00534C29;
+			remoteInfo = Hollywood;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05CD6BD52B9F2BD27F4700CD /* Pods_Hollywood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hollywood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		196E2C8600613219E575FA7D /* Pods-HollywoodUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HollywoodUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HollywoodUITests/Pods-HollywoodUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1E5245BEDF60C7BB8B26437D /* Pods_HollywoodUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HollywoodUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39629DFB5815F29988790729 /* Pods-HollywoodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HollywoodUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HollywoodUITests/Pods-HollywoodUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		41A901B3418B3810A605DF0F /* Pods_HollywoodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HollywoodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43492C991E840B1C00534C29 /* Hollywood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hollywood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43492C9C1E840B1C00534C29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43492C9E1E840B1C00534C29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43492CA11E840B1C00534C29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43492CA31E840B1C00534C29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43492CA61E840B1C00534C29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43492CA81E840B1C00534C29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43492CAD1E840B1C00534C29 /* HollywoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HollywoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43492CB11E840B1C00534C29 /* HollywoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HollywoodTests.swift; sourceTree = "<group>"; };
+		43492CB31E840B1C00534C29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43492CB81E840B1C00534C29 /* HollywoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HollywoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43492CBC1E840B1C00534C29 /* HollywoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HollywoodUITests.swift; sourceTree = "<group>"; };
+		43492CBE1E840B1C00534C29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43534DD71E840BED0046D270 /* FIRDataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRDataObject.swift; sourceTree = "<group>"; };
+		43534DD91E840C010046D270 /* FireView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireView.swift; sourceTree = "<group>"; };
+		43534DDB1E840E210046D270 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		491DAA5418FDC186ED885EB7 /* Pods-HollywoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HollywoodTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HollywoodTests/Pods-HollywoodTests.debug.xcconfig"; sourceTree = "<group>"; };
+		66251777C4C6D5F05F3E43F2 /* Pods-HollywoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HollywoodTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HollywoodTests/Pods-HollywoodTests.release.xcconfig"; sourceTree = "<group>"; };
+		9C272B58B7B602C1F821F5D6 /* Pods-Hollywood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hollywood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hollywood/Pods-Hollywood.debug.xcconfig"; sourceTree = "<group>"; };
+		F7D88E0ED62AC403A861D5B8 /* Pods-Hollywood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hollywood.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hollywood/Pods-Hollywood.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43492C961E840B1C00534C29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3433511C0B17123C483321D0 /* Pods_Hollywood.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43492CAA1E840B1C00534C29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64860A9DD404BB9D734E08D6 /* Pods_HollywoodTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43492CB51E840B1C00534C29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8183DBC8EFECB751E1E36CD /* Pods_HollywoodUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BF9493D99B9E93F0A8AFDD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05CD6BD52B9F2BD27F4700CD /* Pods_Hollywood.framework */,
+				41A901B3418B3810A605DF0F /* Pods_HollywoodTests.framework */,
+				1E5245BEDF60C7BB8B26437D /* Pods_HollywoodUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43492C901E840B1C00534C29 = {
+			isa = PBXGroup;
+			children = (
+				43492C9B1E840B1C00534C29 /* Hollywood */,
+				43492CB01E840B1C00534C29 /* HollywoodTests */,
+				43492CBB1E840B1C00534C29 /* HollywoodUITests */,
+				43492C9A1E840B1C00534C29 /* Products */,
+				BA833944CFBDE187D941AF1D /* Pods */,
+				3BF9493D99B9E93F0A8AFDD6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		43492C9A1E840B1C00534C29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43492C991E840B1C00534C29 /* Hollywood.app */,
+				43492CAD1E840B1C00534C29 /* HollywoodTests.xctest */,
+				43492CB81E840B1C00534C29 /* HollywoodUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43492C9B1E840B1C00534C29 /* Hollywood */ = {
+			isa = PBXGroup;
+			children = (
+				43534DD71E840BED0046D270 /* FIRDataObject.swift */,
+				43534DDB1E840E210046D270 /* GoogleService-Info.plist */,
+				43492C9C1E840B1C00534C29 /* AppDelegate.swift */,
+				43492C9E1E840B1C00534C29 /* ViewController.swift */,
+				43492CA01E840B1C00534C29 /* Main.storyboard */,
+				43492CA31E840B1C00534C29 /* Assets.xcassets */,
+				43492CA51E840B1C00534C29 /* LaunchScreen.storyboard */,
+				43492CA81E840B1C00534C29 /* Info.plist */,
+				43534DD91E840C010046D270 /* FireView.swift */,
+			);
+			path = Hollywood;
+			sourceTree = "<group>";
+		};
+		43492CB01E840B1C00534C29 /* HollywoodTests */ = {
+			isa = PBXGroup;
+			children = (
+				43492CB11E840B1C00534C29 /* HollywoodTests.swift */,
+				43492CB31E840B1C00534C29 /* Info.plist */,
+			);
+			path = HollywoodTests;
+			sourceTree = "<group>";
+		};
+		43492CBB1E840B1C00534C29 /* HollywoodUITests */ = {
+			isa = PBXGroup;
+			children = (
+				43492CBC1E840B1C00534C29 /* HollywoodUITests.swift */,
+				43492CBE1E840B1C00534C29 /* Info.plist */,
+			);
+			path = HollywoodUITests;
+			sourceTree = "<group>";
+		};
+		BA833944CFBDE187D941AF1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C272B58B7B602C1F821F5D6 /* Pods-Hollywood.debug.xcconfig */,
+				F7D88E0ED62AC403A861D5B8 /* Pods-Hollywood.release.xcconfig */,
+				491DAA5418FDC186ED885EB7 /* Pods-HollywoodTests.debug.xcconfig */,
+				66251777C4C6D5F05F3E43F2 /* Pods-HollywoodTests.release.xcconfig */,
+				39629DFB5815F29988790729 /* Pods-HollywoodUITests.debug.xcconfig */,
+				196E2C8600613219E575FA7D /* Pods-HollywoodUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43492C981E840B1C00534C29 /* Hollywood */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43492CC11E840B1C00534C29 /* Build configuration list for PBXNativeTarget "Hollywood" */;
+			buildPhases = (
+				DCEE97BD44B99D6BD77DD051 /* [CP] Check Pods Manifest.lock */,
+				43492C951E840B1C00534C29 /* Sources */,
+				43492C961E840B1C00534C29 /* Frameworks */,
+				43492C971E840B1C00534C29 /* Resources */,
+				785EE919BAE12E6F2954CA1A /* [CP] Embed Pods Frameworks */,
+				576D621E295978A7EA325D14 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hollywood;
+			productName = Hollywood;
+			productReference = 43492C991E840B1C00534C29 /* Hollywood.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43492CAC1E840B1C00534C29 /* HollywoodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43492CC41E840B1C00534C29 /* Build configuration list for PBXNativeTarget "HollywoodTests" */;
+			buildPhases = (
+				73BF4C439CD018F74AC1AC7C /* [CP] Check Pods Manifest.lock */,
+				43492CA91E840B1C00534C29 /* Sources */,
+				43492CAA1E840B1C00534C29 /* Frameworks */,
+				43492CAB1E840B1C00534C29 /* Resources */,
+				EBFA22DB3F53FA10B077DFA3 /* [CP] Embed Pods Frameworks */,
+				8B4BD505EA7068266B72ED96 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43492CAF1E840B1C00534C29 /* PBXTargetDependency */,
+			);
+			name = HollywoodTests;
+			productName = HollywoodTests;
+			productReference = 43492CAD1E840B1C00534C29 /* HollywoodTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43492CB71E840B1C00534C29 /* HollywoodUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43492CC71E840B1C00534C29 /* Build configuration list for PBXNativeTarget "HollywoodUITests" */;
+			buildPhases = (
+				BE20C4E2F4BAE8D563E4AE52 /* [CP] Check Pods Manifest.lock */,
+				43492CB41E840B1C00534C29 /* Sources */,
+				43492CB51E840B1C00534C29 /* Frameworks */,
+				43492CB61E840B1C00534C29 /* Resources */,
+				A96B607E1D08B8B26792FF88 /* [CP] Embed Pods Frameworks */,
+				67BD2D7FB8C6AFB4E0AA1CC8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43492CBA1E840B1C00534C29 /* PBXTargetDependency */,
+			);
+			name = HollywoodUITests;
+			productName = HollywoodUITests;
+			productReference = 43492CB81E840B1C00534C29 /* HollywoodUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43492C911E840B1C00534C29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Endran;
+				TargetAttributes = {
+					43492C981E840B1C00534C29 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					43492CAC1E840B1C00534C29 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 43492C981E840B1C00534C29;
+					};
+					43492CB71E840B1C00534C29 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 43492C981E840B1C00534C29;
+					};
+				};
+			};
+			buildConfigurationList = 43492C941E840B1C00534C29 /* Build configuration list for PBXProject "Hollywood" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43492C901E840B1C00534C29;
+			productRefGroup = 43492C9A1E840B1C00534C29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43492C981E840B1C00534C29 /* Hollywood */,
+				43492CAC1E840B1C00534C29 /* HollywoodTests */,
+				43492CB71E840B1C00534C29 /* HollywoodUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43492C971E840B1C00534C29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43492CA71E840B1C00534C29 /* LaunchScreen.storyboard in Resources */,
+				43534DDC1E840E210046D270 /* GoogleService-Info.plist in Resources */,
+				43492CA41E840B1C00534C29 /* Assets.xcassets in Resources */,
+				43492CA21E840B1C00534C29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43492CAB1E840B1C00534C29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43492CB61E840B1C00534C29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		576D621E295978A7EA325D14 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hollywood/Pods-Hollywood-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67BD2D7FB8C6AFB4E0AA1CC8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HollywoodUITests/Pods-HollywoodUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73BF4C439CD018F74AC1AC7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		785EE919BAE12E6F2954CA1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hollywood/Pods-Hollywood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B4BD505EA7068266B72ED96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HollywoodTests/Pods-HollywoodTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A96B607E1D08B8B26792FF88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HollywoodUITests/Pods-HollywoodUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE20C4E2F4BAE8D563E4AE52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DCEE97BD44B99D6BD77DD051 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EBFA22DB3F53FA10B077DFA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HollywoodTests/Pods-HollywoodTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43492C951E840B1C00534C29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43492C9F1E840B1C00534C29 /* ViewController.swift in Sources */,
+				43534DD81E840BED0046D270 /* FIRDataObject.swift in Sources */,
+				43534DDA1E840C010046D270 /* FireView.swift in Sources */,
+				43492C9D1E840B1C00534C29 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43492CA91E840B1C00534C29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43492CB21E840B1C00534C29 /* HollywoodTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43492CB41E840B1C00534C29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43492CBD1E840B1C00534C29 /* HollywoodUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43492CAF1E840B1C00534C29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43492C981E840B1C00534C29 /* Hollywood */;
+			targetProxy = 43492CAE1E840B1C00534C29 /* PBXContainerItemProxy */;
+		};
+		43492CBA1E840B1C00534C29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43492C981E840B1C00534C29 /* Hollywood */;
+			targetProxy = 43492CB91E840B1C00534C29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43492CA01E840B1C00534C29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43492CA11E840B1C00534C29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43492CA51E840B1C00534C29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43492CA61E840B1C00534C29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43492CBF1E840B1C00534C29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43492CC01E840B1C00534C29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43492CC21E840B1C00534C29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C272B58B7B602C1F821F5D6 /* Pods-Hollywood.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Hollywood/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.endran.hollywood.Hollywood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		43492CC31E840B1C00534C29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7D88E0ED62AC403A861D5B8 /* Pods-Hollywood.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Hollywood/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.endran.hollywood.Hollywood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		43492CC51E840B1C00534C29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 491DAA5418FDC186ED885EB7 /* Pods-HollywoodTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HollywoodTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.endran.hollywood.HollywoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hollywood.app/Hollywood";
+			};
+			name = Debug;
+		};
+		43492CC61E840B1C00534C29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66251777C4C6D5F05F3E43F2 /* Pods-HollywoodTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HollywoodTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.endran.hollywood.HollywoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hollywood.app/Hollywood";
+			};
+			name = Release;
+		};
+		43492CC81E840B1C00534C29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39629DFB5815F29988790729 /* Pods-HollywoodUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = HollywoodUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.endran.hollywood.HollywoodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Hollywood;
+			};
+			name = Debug;
+		};
+		43492CC91E840B1C00534C29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 196E2C8600613219E575FA7D /* Pods-HollywoodUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = HollywoodUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.endran.hollywood.HollywoodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Hollywood;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43492C941E840B1C00534C29 /* Build configuration list for PBXProject "Hollywood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43492CBF1E840B1C00534C29 /* Debug */,
+				43492CC01E840B1C00534C29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43492CC11E840B1C00534C29 /* Build configuration list for PBXNativeTarget "Hollywood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43492CC21E840B1C00534C29 /* Debug */,
+				43492CC31E840B1C00534C29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43492CC41E840B1C00534C29 /* Build configuration list for PBXNativeTarget "HollywoodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43492CC51E840B1C00534C29 /* Debug */,
+				43492CC61E840B1C00534C29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43492CC71E840B1C00534C29 /* Build configuration list for PBXNativeTarget "HollywoodUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43492CC81E840B1C00534C29 /* Debug */,
+				43492CC91E840B1C00534C29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43492C911E840B1C00534C29 /* Project object */;
+}
