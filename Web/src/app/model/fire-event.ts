@@ -5,4 +5,5 @@ export class FireEvent {
   name: string;
   radioId: number;
   timeStamp: Date;
+  slider: number;
 }
