@@ -18,6 +18,7 @@
 		43534DD81E840BED0046D270 /* FIRDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43534DD71E840BED0046D270 /* FIRDataObject.swift */; };
 		43534DDA1E840C010046D270 /* FireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43534DD91E840C010046D270 /* FireView.swift */; };
 		43534DDC1E840E210046D270 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43534DDB1E840E210046D270 /* GoogleService-Info.plist */; };
+		5E75C0989CDC2345037C1007 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75C9B48A2C2FA8A0233C1D /* Event.swift */; };
 		64860A9DD404BB9D734E08D6 /* Pods_HollywoodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A901B3418B3810A605DF0F /* Pods_HollywoodTests.framework */; };
 		B8183DBC8EFECB751E1E36CD /* Pods_HollywoodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5245BEDF60C7BB8B26437D /* Pods_HollywoodUITests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		43534DD91E840C010046D270 /* FireView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireView.swift; sourceTree = "<group>"; };
 		43534DDB1E840E210046D270 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		491DAA5418FDC186ED885EB7 /* Pods-HollywoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HollywoodTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HollywoodTests/Pods-HollywoodTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E75C9B48A2C2FA8A0233C1D /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		66251777C4C6D5F05F3E43F2 /* Pods-HollywoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HollywoodTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HollywoodTests/Pods-HollywoodTests.release.xcconfig"; sourceTree = "<group>"; };
 		9C272B58B7B602C1F821F5D6 /* Pods-Hollywood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hollywood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hollywood/Pods-Hollywood.debug.xcconfig"; sourceTree = "<group>"; };
 		F7D88E0ED62AC403A861D5B8 /* Pods-Hollywood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hollywood.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hollywood/Pods-Hollywood.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				43492CA51E840B1C00534C29 /* LaunchScreen.storyboard */,
 				43492CA81E840B1C00534C29 /* Info.plist */,
 				43534DD91E840C010046D270 /* FireView.swift */,
+				5E75C9B48A2C2FA8A0233C1D /* Event.swift */,
 			);
 			path = Hollywood;
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 				43534DD81E840BED0046D270 /* FIRDataObject.swift in Sources */,
 				43534DDA1E840C010046D270 /* FireView.swift in Sources */,
 				43492C9D1E840B1C00534C29 /* AppDelegate.swift in Sources */,
+				5E75C0989CDC2345037C1007 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
