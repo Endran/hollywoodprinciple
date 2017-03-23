@@ -96,6 +96,7 @@ class MainActivity : AppCompatActivity() {
         RxFirebaseDatabase.observeValueEvent(reference.child("events"))
                 .map { it.children.count() }
                 .subscribe { nrOfLocalEventsText.text = "$it" }
+                .run { subscriptions.add(this) }
 
         RxFirebaseDatabase.observeValueEvent(reference.child("views"))
                 .map { it.getValue(FireView::class.java) }
@@ -115,6 +116,7 @@ class MainActivity : AppCompatActivity() {
                     latestCheckboxText.text = "${it.latest?.checked}"
                     latestSliderText.text = "${it.latest?.slider}"
                 }
+                .run { subscriptions.add(this) }
     }
 
     private fun getCheckedIndex(): Int {
