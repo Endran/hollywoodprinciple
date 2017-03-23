@@ -2,21 +2,51 @@
   {{title}}
 </h1>
 
-<section>
+<section *ngIf="eventFormGroup!=null">
+  <h2>
+    Input
+  </h2>
+  <form [formGroup]="eventFormGroup" (submit)="save(eventFormGroup.value, eventFormGroup.valid)">
+    <div>
+      <input type="text" id="name" formControlName="name" [(ngModel)]="eventFormGroup.name">
+    </div>
+    <div>
+      <label>
+        <input type="radio" id="radioId1" formControlName="radioId" [(ngModel)]="eventFormGroup.radioId"
+               [value]="1">Radio 1
+        <input type="radio" id="radioId2" formControlName="radioId" [(ngModel)]="eventFormGroup.radioId"
+               [value]="2">Radio 2
+        <input type="radio" id="radioId3" formControlName="radioId" [(ngModel)]="eventFormGroup.radioId"
+               [value]="3">Radio 3
+      </label>
+    </div>
+    <div>
+      <label>
+        <input type="checkbox" formControlName="checked" [(ngModel)]="eventFormGroup.checked">Checked
+      </label>
+    </div>
+    <div>
+      <input type="number" min="0" max="100" step="1" id="slider" formControlName="slider" [(ngModel)]="eventFormGroup.slider">
+    </div>
+    <div>
+      <button type="submit" [disabled]="!eventFormGroup.valid">Send</button>
+    </div>
+  </form>
+</section>
+
+<section *ngIf="view!=null">
   <h2>
     View
   </h2>
-  <div *ngIf="view!=null">
-    <div>Events: {{view.eventCount}}</div>
-    <div>Instances: {{view.appId}}</div>
-    <div>Users: {{view.users}}</div>
-    <div>Radio 1: {{view.radio["r1"]}}</div>
-    <div>Radio 2: {{view.radio["r2"]}}</div>
-    <div>Radio 3: {{view.radio["r3"]}}</div>
-    <div>Checked True: {{view.checked["true"]}}</div>
-    <div>Checked False: {{view.checked["false"]}}</div>
-    <div>Slider Value: {{view.sliderAverage}}</div>
-  </div>
+  <div>Events: {{view.eventCount}}</div>
+  <div>Instances: {{view.appId}}</div>
+  <div>Users: {{view.users}}</div>
+  <div>Radio 1: {{view.radio["r1"]}}</div>
+  <div>Radio 2: {{view.radio["r2"]}}</div>
+  <div>Radio 3: {{view.radio["r3"]}}</div>
+  <div>Checked True: {{view.checked["true"]}}</div>
+  <div>Checked False: {{view.checked["false"]}}</div>
+  <div>Slider Value: {{view.sliderAverage}}</div>
 </section>
 
 <section>
