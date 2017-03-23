@@ -1,10 +1,11 @@
 import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import {NgModule, enableProdMode} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
-import {AngularFireModule} from 'angularfire2';
+import {AngularFireModule, AngularFire} from 'angularfire2';
 
 import {AppComponent} from './app.component';
+import {environment} from "../environments/environment";
 
 export const firebaseConfig = {
   apiKey: "AIzaSyCuS0Jo1sFlrgPIuLG8sOkIYYvx6e6u_Qk",
@@ -28,4 +29,11 @@ export const firebaseConfig = {
   bootstrap: [AppComponent]
 })
 export class AppModule {
+  constructor() {
+    if (environment.production){
+      console.log("PRODUCTION");
+    }else {
+      console.log("DEBUG");
+    }
+  }
 }

@@ -8,7 +8,7 @@ import {FireEvent} from "./model/fire-event";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Hello app works!';
 
   events: FireEvent[];
 
