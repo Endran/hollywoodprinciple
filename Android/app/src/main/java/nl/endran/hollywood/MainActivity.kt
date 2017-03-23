@@ -16,7 +16,24 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    data class Event(val appId: String, val name: String, val radioId: Int, val checked: Boolean, val slider: Int, val clientType: String = "Android", val timeStamp: Map<String, String> = ServerValue.TIMESTAMP)
+    data class FireEvent(
+            val appId: String,
+            val name: String,
+            val radioId: Int,
+            val checked: Boolean,
+            val slider: Int,
+            val clientType: String = "Android",
+            val timeStamp: Map<String, String> = ServerValue.TIMESTAMP)
+
+    data class FireView(
+            val appId: Int? = null,
+            val checked: Map<String, Int>? = null,
+            val clientType: Map<String, Int>? = null,
+            val eventCount: Int? = null,
+            val radio: Map<String, Int>? = null,
+            val sliderAverage: Double? = null,
+            val users: Int? = null)
+
 
     var subscriptions = mutableListOf<Subscription>()
 
@@ -62,13 +79,27 @@ class MainActivity : AppCompatActivity() {
         val reference = FirebaseDatabase.getInstance().reference
 
         sendButton.clicks()
-                .map { Event(appId, editText.text.toString(), getCheckedIndex(), checkBox.isChecked, seekbar.progress) }
+                .map { FireEvent(appId, editText.text.toString(), getCheckedIndex(), checkBox.isChecked, seekbar.progress) }
                 .subscribe { reference.child("events").push().setValue(it) }
                 .run { subscriptions.add(this) }
 
         RxFirebaseDatabase.observeValueEvent(reference.child("events"))
                 .map { it.children.count() }
-                .subscribe { nrOfEventsText.text = "$it" }
+                .subscribe { nrOfLocalEventsText.text = "$it" }
+
+        RxFirebaseDatabase.observeValueEvent(reference.child("views"))
+                .map { it.getValue(FireView::class.java) }
+                .subscribe {
+                    nrOfRemoteEventsText.text = "${it.eventCount}"
+                    nrOfRemoteAppsText.text = "${it.appId}"
+                    nrOfRemoteUserText.text = "${it.users}"
+                    nrOfRemoteRadio1Text.text = "${it.radio?.get("r1")}"
+                    nrOfRemoteRadio2Text.text = "${it.radio?.get("r2")}"
+                    nrOfRemoteRadio3Text.text = "${it.radio?.get("r3")}"
+                    nrOfRemoteCheckedTrueText.text = "${it.checked?.get("true")}"
+                    nrOfRemoteCheckedFalseText.text = "${it.checked?.get("false")}"
+                    remoteSliderAvgText.text = "${it.sliderAverage}"
+                }
     }
 
     private fun getCheckedIndex(): Int {
