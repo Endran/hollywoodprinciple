@@ -1,3 +1,5 @@
+import {FireEvent} from "./fire-event";
+
 export class FireView {
   appId: string;
   checked: Map<string, number>;
@@ -6,4 +8,5 @@ export class FireView {
   radio: Map<string, number>;
   sliderAverage: number;
   users: number;
+  latest : FireEvent;
 }
