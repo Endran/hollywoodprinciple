@@ -16,7 +16,7 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    data class FireEvent(
+    data class LocalEvent(
             val appId: String,
             val name: String,
             val radioId: Int,
@@ -25,6 +25,15 @@ class MainActivity : AppCompatActivity() {
             val clientType: String = "Android",
             val timeStamp: Map<String, String> = ServerValue.TIMESTAMP)
 
+    data class FireEvent(
+            val appId: String? = null,
+            val name: String? = null,
+            val radioId: Int? = null,
+            val checked: Boolean? = null,
+            val slider: Int? = null,
+            val clientType: String? = null,
+            val timeStamp : Long? = null)
+
     data class FireView(
             val appId: Int? = null,
             val checked: Map<String, Int>? = null,
@@ -32,6 +41,7 @@ class MainActivity : AppCompatActivity() {
             val eventCount: Int? = null,
             val radio: Map<String, Int>? = null,
             val sliderAverage: Double? = null,
+            val latest : FireEvent? = null,
             val users: Int? = null)
 
 
@@ -79,7 +89,7 @@ class MainActivity : AppCompatActivity() {
         val reference = FirebaseDatabase.getInstance().reference
 
         sendButton.clicks()
-                .map { FireEvent(appId, editText.text.toString(), getCheckedIndex(), checkBox.isChecked, seekbar.progress) }
+                .map { LocalEvent(appId, editText.text.toString(), getCheckedIndex(), checkBox.isChecked, seekbar.progress) }
                 .subscribe { reference.child("events").push().setValue(it) }
                 .run { subscriptions.add(this) }
 
@@ -99,6 +109,11 @@ class MainActivity : AppCompatActivity() {
                     nrOfRemoteCheckedTrueText.text = "${it.checked?.get("true")}"
                     nrOfRemoteCheckedFalseText.text = "${it.checked?.get("false")}"
                     remoteSliderAvgText.text = "${it.sliderAverage}"
+
+                    latestNameText.text = "${it.latest?.name}"
+                    latestRadioText.text = "${it.latest?.radioId}"
+                    latestCheckboxText.text = "${it.latest?.checked}"
+                    latestSliderText.text = "${it.latest?.slider}"
                 }
     }
 
