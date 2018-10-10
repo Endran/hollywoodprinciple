@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "442806894257",
-    "firebase_url": "https://hollywoodprinciple-fdebd.firebaseio.com",
-    "project_id": "hollywoodprinciple-fdebd",
-    "storage_bucket": "hollywoodprinciple-fdebd.appspot.com"
+    "project_number": "1094655653815",
+    "firebase_url": "https://cc-hollywood.firebaseio.com",
+    "project_id": "cc-hollywood",
+    "storage_bucket": "cc-hollywood.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:442806894257:android:a552461ed1431f61",
+        "mobilesdk_app_id": "1:1094655653815:android:a552461ed1431f61",
         "android_client_info": {
           "package_name": "nl.endran.hollywood"
         }
       },
       "oauth_client": [
         {
-          "client_id": "442806894257-6nu85g7r3cnplm1keh1smgrn1iapuqg0.apps.googleusercontent.com",
+          "client_id": "1094655653815-0tmmc3m5rssm1hj16ujo6tnkp1r19eg7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDuC7wn8k5MM7w8QNG-_-zLCX2R4LLGp1Q"
+          "current_key": "AIzaSyDduC1Vk30hTvKffxVsxJOdJYuIRSZcNi8"
         }
       ],
       "services": {
